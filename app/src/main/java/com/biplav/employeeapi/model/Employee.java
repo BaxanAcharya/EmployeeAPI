@@ -1,7 +1,7 @@
 package com.biplav.employeeapi.model;
 
 public class Employee {
-    
+
     private int id;
     private String employee_name;
     private String employee_salary;
