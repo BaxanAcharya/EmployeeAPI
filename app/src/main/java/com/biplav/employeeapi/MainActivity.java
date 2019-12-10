@@ -2,6 +2,7 @@ package com.biplav.employeeapi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         btnshow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(v.getContext(), DisplayActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -36,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         btnsearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(v.getContext(), SearchActivity.class);
+                startActivity(intent);
             }
         });
 
