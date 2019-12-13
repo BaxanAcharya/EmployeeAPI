@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
         btnupdate_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(v.getContext(), Update_DeleteActivity.class);
+                startActivity(intent);
             }
         });
     }
